@@ -14,7 +14,7 @@
         android:orientation="horizontal">
 
         <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/logoImg"
+            android:id="@+id/storeLogoImg"
             android:layout_width="50dp"
             android:layout_height="50dp"
             app:civ_border_color="#000000"

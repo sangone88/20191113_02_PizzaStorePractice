@@ -9,7 +9,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 class MainActivity : BaseActivity() {
 
     var pizzaStoreList = ArrayList<PizzaStoreData>()
-    var pizzaStoreAdapter : PizzaStoreAdapter?()
+    var pizzaStoreAdapter : PizzaStoreAdapter? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
