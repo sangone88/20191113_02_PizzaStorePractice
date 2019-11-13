@@ -1,5 +1,6 @@
 package com.tjoeun.a20191113_02_pizzastorepractice
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.tjoeun.a20191113_02_pizzastorepractice.adapters.PizzaStoreAdapter
@@ -19,6 +20,14 @@ class MainActivity : BaseActivity() {
     }
 
     override fun setupEvents() {
+        pizzaStoreListView.setOnItemClickListener { parent, view, position, id ->
+
+            var clickedStore = pizzaStoreList.get(position)
+
+            var intent = Intent(mContext, StoreDetailActivity::class.java)
+            intent.putExtra("store", clickedStore)
+            st
+        }
 
     }
 
